@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just to process your account further stay on the call with representative for the next 10 minutes and we will surely update your details in time</title>
+    <style>
+        /* Style for the popup */
+        .popup {
+            display: none; /* Initially hide the popup */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: rgba(0, 66, 247, 0.8);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- The Popup -->
+    <div id="popup" class="popup">
+        <p><b>Just to process your account further stay on the call with representative for the next 10 minutes and we will surely update your details in time!</b></p>
+    </div>
+
+    <script>
+        // Function to show the popup and redirect after 5 seconds
+        window.onload = function() {
+            // Show the popup
+            const popup = document.getElementById("popup");
+            popup.style.display = "block";
+
+            // Set a timer to hide the popup and reload the page after 5 seconds
+            setTimeout(function() {
+                // Redirect to a new URL after 5 seconds
+                window.location.href = "https://www.o2.co.uk"; // Replace with your desired URL
+            }, 1000000); // 1000000 milliseconds = 5 seconds
+        };
+    </script>
+</body>
+</html>
